@@ -1,0 +1,6 @@
+CREATE OR REPLACE TRIGGER  "agent_seqtrig" 
+  before insert on Agent              
+  for each row 
+begin  
+    select "AGENT_SEQ".nextval into :NEW.A_ID from dual;
+end;

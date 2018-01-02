@@ -1,0 +1,6 @@
+CREATE OR REPLACE TRIGGER  "COM_SEQTRIGGER" 
+  before insert on   company            
+  for each row 
+begin  
+    select company_SEQ.nextval into :NEW.com_ID from dual;
+end;

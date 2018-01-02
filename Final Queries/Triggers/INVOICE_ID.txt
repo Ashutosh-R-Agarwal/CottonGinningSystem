@@ -1,0 +1,6 @@
+CREATE OR REPLACE TRIGGER  "INVOICE_ID" 
+  before insert on "INVOICE"              
+  for each row 
+begin  
+    select "INVOICE_ID".nextval into :NEW.I_NO  from dual;
+end;

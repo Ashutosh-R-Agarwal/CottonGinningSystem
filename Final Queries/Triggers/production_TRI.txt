@@ -1,0 +1,6 @@
+CREATE OR REPLACE TRIGGER  "production_TRI" 
+  before insert on "PRODUCTIONUNIT"              
+  for each row 
+begin  
+    select "PRODUCTION_SEQ".nextval into :NEW.P_ID from dual;
+end;

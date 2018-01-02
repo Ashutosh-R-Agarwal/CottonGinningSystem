@@ -1,0 +1,7 @@
+CREATE OR REPLACE FORCE VIEW  "PURCHASE_VIEW" ("PONO", "P_DAY", "P_MONTH", "P_YEAR", "P_TOTAMT", "E_ID", "A_ID") AS 
+  select purchaseorder.pono,purchaseorder.p_day,purchaseorder.p_month,purchaseorder.p_year,purchaseorder.p_totamt,purchaseorder.e_id,depends.a_id from purchaseorder,depends where purchaseorder.pono=depends.po_no
+
+
+        
+  
+

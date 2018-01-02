@@ -1,0 +1,1 @@
+select p.pono,t.P_VARIETY,t.P_QTY,t.P_RATE from PURCHASE_QTY t,PURCHASEORDER p where p.pono=t.PO_NO

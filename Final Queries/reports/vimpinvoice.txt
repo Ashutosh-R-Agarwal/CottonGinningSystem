@@ -1,0 +1,1 @@
+select i.I_NO,i.I_QTYSUP,i.I_DAY,i.I_MONTH,i.I_YEAR,i.I_QTYSUP,i.I_RATE,c.COM_NAME  from invoice i,COMPANY c where i.COM_ID=c.COM_ID

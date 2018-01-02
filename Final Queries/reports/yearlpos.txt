@@ -1,0 +1,1 @@
+select a.A_NAME,v.PONO,v.P_VARIETY,v.P_QTY,v.P_RATE,v.P_DAY,v.P_MONTH,v.P_YEAR from AGENT a,PURCHASE_DETAILS v where v.A_ID=a.A_ID and v.P_YEAR=2013
